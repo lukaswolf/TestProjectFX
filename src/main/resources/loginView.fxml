@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lukaszwilk.TestProjectFX.controllers.LoginController">
+    <children>
+        <TabPane layoutX="-1.0" layoutY="-6.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Logowanie">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="loginL" layoutX="153.0" layoutY="101.0" prefHeight="25.0" prefWidth="222.0" />
+                                <PasswordField fx:id="passwordL" layoutX="155.0" layoutY="173.0" prefHeight="25.0" prefWidth="220.0" />
+                                <Button fx:id="buttonL" layoutX="224.0" layoutY="248.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="Zaloguj" />
+                                <Label layoutX="211.0" layoutY="36.0" text="Logowanie" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Rejestracja">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="nameR" layoutX="162.0" layoutY="129.0" prefHeight="25.0" prefWidth="241.0" promptText="Nazwa" />
+                                <PasswordField fx:id="passwordR" layoutX="162.0" layoutY="186.0" prefHeight="25.0" prefWidth="241.0" promptText="Hasło" />
+                                <PasswordField fx:id="passwordRR" layoutX="160.0" layoutY="238.0" prefHeight="25.0" prefWidth="243.0" promptText="Powtórz hasło" />
+                                <Button fx:id="buttonRR" layoutX="216.0" layoutY="288.0" mnemonicParsing="false" text="Zarejestruj">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Button>
+                                <Label layoutX="222.0" layoutY="53.0" text="Rejestracja">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

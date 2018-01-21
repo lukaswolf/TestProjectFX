@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lukaszwilk.TestProjectFX.controllers.MainController">
+   <children>
+      <ListView fx:id="listView" prefHeight="400.0" prefWidth="221.0" />
+      <TabPane layoutX="222.0" prefHeight="400.0" prefWidth="379.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Kontakt">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="347.0">
+                     <children>
+                        <TextField fx:id="textNumber" layoutX="-6.0" layoutY="169.0" prefHeight="128.0" prefWidth="379.0" style="-fx-background-color: grey;" text="731-265-428">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textName" prefHeight="86.0" prefWidth="386.0" style="-fx-background-color: grey;" text="Imie i Nazwisko">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="buttonLogOut" layoutX="261.0" layoutY="318.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="104.0" text="Wyloguj" />
+                        <Button fx:id="buttonDelete" layoutX="35.0" layoutY="320.0" mnemonicParsing="false" text="Usun" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Nowy kontakt">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textFieldDIN" layoutX="64.0" layoutY="104.0" prefHeight="25.0" prefWidth="253.0" promptText="Imie" />
+                        <TextField fx:id="textFieldDNN" layoutX="64.0" layoutY="186.0" prefHeight="25.0" prefWidth="254.0" promptText="Numer" />
+                        <Button fx:id="buttonAdd" layoutX="164.0" layoutY="265.0" mnemonicParsing="false" text="Dodaj" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
